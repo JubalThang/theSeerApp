@@ -16,7 +16,7 @@
 		ACA1B461251FC08C00D89987 /* Pastor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B460251FC08C00D89987 /* Pastor.swift */; };
 		ACA1B465251FC0E100D89987 /* FirebaseRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B464251FC0E100D89987 /* FirebaseRespository.swift */; };
 		ACA1B493251FD06900D89987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B492251FD06900D89987 /* HomeView.swift */; };
-		ACA1B497251FD08F00D89987 /* HomeCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B496251FD08F00D89987 /* HomeCollectionView.swift */; };
+		ACA1B497251FD08F00D89987 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B496251FD08F00D89987 /* HomeViewController.swift */; };
 		ACA1B49A251FD0B600D89987 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B499251FD0B600D89987 /* HomeCollectionCell.swift */; };
 		ACA1B49D251FD0C600D89987 /* CollectionViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B49C251FD0C600D89987 /* CollectionViewHeaderCell.swift */; };
 		ACA1B4A2251FD11E00D89987 /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B4A1251FD11E00D89987 /* Anchor.swift */; };
@@ -39,7 +39,7 @@
 		ACA1B460251FC08C00D89987 /* Pastor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastor.swift; sourceTree = "<group>"; };
 		ACA1B464251FC0E100D89987 /* FirebaseRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRespository.swift; sourceTree = "<group>"; };
 		ACA1B492251FD06900D89987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		ACA1B496251FD08F00D89987 /* HomeCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionView.swift; sourceTree = "<group>"; };
+		ACA1B496251FD08F00D89987 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		ACA1B499251FD0B600D89987 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
 		ACA1B49C251FD0C600D89987 /* CollectionViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeaderCell.swift; sourceTree = "<group>"; };
 		ACA1B4A1251FD11E00D89987 /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA1B492251FD06900D89987 /* HomeView.swift */,
-				ACA1B496251FD08F00D89987 /* HomeCollectionView.swift */,
+				ACA1B496251FD08F00D89987 /* HomeViewController.swift */,
 				ACA1B499251FD0B600D89987 /* HomeCollectionCell.swift */,
 				ACA1B49C251FD0C600D89987 /* CollectionViewHeaderCell.swift */,
 			);
@@ -305,7 +305,7 @@
 				ACA1B4A9251FD13800D89987 /* GradientBackground.swift in Sources */,
 				ACA1B4A6251FD12900D89987 /* Extensions.swift in Sources */,
 				ACA1B465251FC0E100D89987 /* FirebaseRespository.swift in Sources */,
-				ACA1B497251FD08F00D89987 /* HomeCollectionView.swift in Sources */,
+				ACA1B497251FD08F00D89987 /* HomeViewController.swift in Sources */,
 				ACA1B4A2251FD11E00D89987 /* Anchor.swift in Sources */,
 				ACA1B49A251FD0B600D89987 /* HomeCollectionCell.swift in Sources */,
 			);

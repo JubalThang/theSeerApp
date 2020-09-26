@@ -9,11 +9,27 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var firebaseRepo : FirebaseRespository
+    @State var selectedPastor = pastorExample
+    
+    @State var isPastorSelected = false
+    
     var body: some View {
-        Text("\(firebaseRepo.pastors.count)")
-            .onAppear(perform: {
-                firebaseRepo.fetchFirebase()
-            })
+        VStack {
+            if !firebaseRepo.pastors.isEmpty {
+                
+                HomeViewController(isSelectionPastor: $isPastorSelected, selectedPastor: $selectedPastor, pastors: firebaseRepo.pastors) { (pastor) in
+                    self.selectedPastor = pastor
+                }
+                
+            }
+            
+            NavigationLink(
+                destination: Text("Destination"),
+                isActive: self.$isPastorSelected,
+                label: {
+                    EmptyView()
+                })
+        }
     }
 }
 

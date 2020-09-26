@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
-    
+    var firebaseRepo = FirebaseRespository()
     var body: some View {
         TabView {
             NavigationView {
@@ -27,6 +27,7 @@ struct AppView: View {
                 }
                 
             }
+            .environmentObject(firebaseRepo)
             .tabItem {
                 VStack {
                     Image("home").renderingMode(.template)

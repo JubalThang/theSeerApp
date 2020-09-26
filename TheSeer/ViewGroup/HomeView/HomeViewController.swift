@@ -8,8 +8,11 @@
 import SwiftUI
 struct HomeViewController : UIViewControllerRepresentable {
     
-    @Binding var pastors : [Pastor]
+   
     @Binding var isSelectionPastor : Bool
+    @Binding var selectedPastor : Pastor
+    
+    var pastors : [Pastor]
     
     var onCommit : (Pastor) -> Void
     
@@ -20,13 +23,13 @@ struct HomeViewController : UIViewControllerRepresentable {
     class Coordinator : NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
         
         var pastors = [Pastor]()
-        
         let parent : HomeViewController
         
         static let homeViewCell_id = "homeCollectionCell_id"
         static let homeViewHeader_id = "homeViewHeader_id"
         
         init(_ parent : HomeViewController) {
+          
             self.parent = parent
             self.pastors = parent.pastors
         }
@@ -56,6 +59,8 @@ struct HomeViewController : UIViewControllerRepresentable {
         
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
             parent.isSelectionPastor = true
+
+            parent.selectedPastor = self.pastors[indexPath.item]
             parent.getIndex(pastor: self.parent.pastors[indexPath.row])
         }
         

@@ -12,8 +12,7 @@ import FirebaseFirestore
 class FirebaseRespository : ObservableObject {
     let db = Firestore.firestore()
     @Published var pastors = [Pastor]()
-    
-    func fetchFirebase() {
+    init() {
        
         db.collection("pastors")
             .addSnapshotListener { (snapShot, error) in
