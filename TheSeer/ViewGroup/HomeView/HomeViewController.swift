@@ -41,19 +41,20 @@ struct HomeViewController : UIViewControllerRepresentable {
             self.bibleVerseURlString = parent.dailyBibleVerseURLString
         }
         
+        // MARK: Header Size
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
             return CGSize(width: collectionView.frame.width, height: collectionView.frame.height / 3)
         }
         
-        // Deque Header
+        // MARK: Deque Header
         func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Coordinator.homeViewHeader_id, for: indexPath) as! CollectionViewHeaderCell
             header.bibleVerseURLString = bibleVerseURlString
             return header
         }
-        
+        // MARK: Cell Size
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: collectionView.frame.width / 2 - 1, height: collectionView.frame.height / 3)
+            return CGSize(width: collectionView.frame.width / 2 - 1, height: collectionView.frame.height / 3.5)
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             return 2

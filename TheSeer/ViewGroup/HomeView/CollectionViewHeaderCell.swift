@@ -19,12 +19,17 @@ class CollectionViewHeaderCell : UICollectionViewCell {
         }
     }
     
+    
+    
     var dailyScriptureImg : UIImageView = {
+        let borderColor = UIColor(red: 53/255, green: 114/255, blue: 234/255, alpha: 1)
         let iv = UIImageView()
         iv.layer.cornerRadius = 10
         iv.image = UIImage(named: "siazaw")
 //        iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
+        iv.layer.borderWidth = 2
+        iv.layer.borderColor = borderColor.cgColor
         return iv
     }()
   

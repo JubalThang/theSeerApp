@@ -11,7 +11,8 @@ extension UINavigationController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         
-        hidesBarsOnSwipe = true
+        // MARK: Hide NavigationBar onSwipe
+//        hidesBarsOnSwipe = true
         
         // other Navigation bar customizations
         navigationBar.standardAppearance.shadowColor = .clear
@@ -40,5 +41,20 @@ extension String {
         } else {
             return []
         }
+    }
+}
+
+extension Date {
+    
+    func dateToString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
+        return dateFormatter.string(from: self)
+    }
+}
+
+extension View {
+    func cornerRadius(radius: CGFloat, corners: UIRectCorner) -> some View {
+        ModifiedContent(content: self, modifier: CornerRadiusModifier(radius: radius, corners: corners))
     }
 }
