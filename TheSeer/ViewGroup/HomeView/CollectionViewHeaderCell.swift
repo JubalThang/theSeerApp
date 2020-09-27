@@ -6,13 +6,24 @@
 //
 
 import UIKit
+import SDWebImage
+
 class CollectionViewHeaderCell : UICollectionViewCell {
+    
+    var bibleVerseURLString : String? {
+        didSet {
+            if let urlString = bibleVerseURLString {
+                guard let url = URL(string: urlString) else {return}
+                self.dailyScriptureImg.sd_setImage(with: url)
+            }
+        }
+    }
     
     var dailyScriptureImg : UIImageView = {
         let iv = UIImageView()
         iv.layer.cornerRadius = 10
         iv.image = UIImage(named: "siazaw")
-        iv.contentMode = .scaleAspectFill
+//        iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
         return iv
     }()

@@ -15,16 +15,16 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            if !firebaseRepo.pastors.isEmpty {
+            if !firebaseRepo.pastors.isEmpty && !firebaseRepo.dailyBibleVerseURL.isEmpty {
                 
-                HomeViewController(isSelectionPastor: $isPastorSelected, selectedPastor: $selectedPastor, pastors: firebaseRepo.pastors) { (pastor) in
+                HomeViewController(isSelectionPastor: $isPastorSelected, selectedPastor: $selectedPastor, pastors: firebaseRepo.pastors, dailyBibleVerseURLString: firebaseRepo.dailyBibleVerseURL) { (pastor) in
                     self.selectedPastor = pastor
                 }
                 
             }
             
             NavigationLink(
-                destination: Text("Destination"),
+                destination: PastorProfileView(selectedPastor: selectedPastor),
                 isActive: self.$isPastorSelected,
                 label: {
                     EmptyView()

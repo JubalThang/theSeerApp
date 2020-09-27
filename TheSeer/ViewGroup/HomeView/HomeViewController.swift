@@ -14,6 +14,8 @@ struct HomeViewController : UIViewControllerRepresentable {
     
     var pastors : [Pastor]
     
+    var dailyBibleVerseURLString : String
+    
     var onCommit : (Pastor) -> Void
     
     func getIndex(pastor: Pastor) {
@@ -22,16 +24,21 @@ struct HomeViewController : UIViewControllerRepresentable {
     
     class Coordinator : NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
         
-        var pastors = [Pastor]()
+        
         let parent : HomeViewController
+        
+        var pastors = [Pastor]()
+        var bibleVerseURlString = ""
         
         static let homeViewCell_id = "homeCollectionCell_id"
         static let homeViewHeader_id = "homeViewHeader_id"
+        
         
         init(_ parent : HomeViewController) {
           
             self.parent = parent
             self.pastors = parent.pastors
+            self.bibleVerseURlString = parent.dailyBibleVerseURLString
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -41,6 +48,7 @@ struct HomeViewController : UIViewControllerRepresentable {
         // Deque Header
         func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Coordinator.homeViewHeader_id, for: indexPath) as! CollectionViewHeaderCell
+            header.bibleVerseURLString = bibleVerseURlString
             return header
         }
         
@@ -68,6 +76,7 @@ struct HomeViewController : UIViewControllerRepresentable {
         // Deque Cell
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Coordinator.homeViewCell_id, for: indexPath) as! HomeCollectionCell
+            cell.pastor = pastors[indexPath.item] 
             return cell
         }
         

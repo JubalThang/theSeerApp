@@ -9,12 +9,24 @@ import UIKit
 
 class HomeCollectionCell : UICollectionViewCell {
     
+    var pastor : Pastor? {
+        didSet {
+            if let pastor = pastor {
+                self.nameLbl.text = pastor.name
+                
+                guard let url = URL(string: pastor.img_url) else {return}
+                
+                self.imageView.sd_setImage(with: url)
+            }
+        }
+    }
+    
     var nameLbl : UILabel = {
         let l = UILabel()
         l.text = "Rev.Zaw Lin Aung"
         l.textAlignment = .right
         l.textColor = .white
-        l.font = .systemFont(ofSize: 16, weight: .semibold)
+        l.font = .systemFont(ofSize: 14, weight: .semibold)
         return l
     }()
     

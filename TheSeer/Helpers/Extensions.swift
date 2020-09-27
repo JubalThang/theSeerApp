@@ -32,3 +32,13 @@ extension UITabBarController {
         tabBar.standardAppearance = standardAppearance
     }
 }
+
+extension String {
+    func generate() -> [String] {
+        if self.contains("|") {
+            return self.components(separatedBy: "|")
+        } else {
+            return []
+        }
+    }
+}

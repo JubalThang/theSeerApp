@@ -12,6 +12,7 @@ import FirebaseFirestore
 class FirebaseRespository : ObservableObject {
     let db = Firestore.firestore()
     @Published var pastors = [Pastor]()
+    @Published var dailyBibleVerseURL = ""
     init() {
        
         db.collection("pastors")
@@ -32,5 +33,20 @@ class FirebaseRespository : ObservableObject {
                     }
                 }
             }
+        
+        db.collection("daily_bible_verse").document("daily_verse").getDocument { (document, error) in
+            if let document = document, document.exists {
+                do {
+                    if let bibleVerseModel = try document.data(as: DailyBibleVerse.self){
+                        self.dailyBibleVerseURL = bibleVerseModel.imageURL
+                    }
+                } catch let err {
+                    print("Error ecoding the document : \(err.localizedDescription)")
+                }
+                
+            } else {
+                print("Document does not exit")
+            }
+        }
     }
 }
