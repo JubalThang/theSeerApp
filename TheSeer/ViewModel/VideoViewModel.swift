@@ -16,6 +16,7 @@ class VideoViewModel : ObservableObject {
         youtubeAPI.fetchYouTube { (videos, err) in
             if let err = err {
                 self.errorString = err.localizedDescription
+                print("VideoModel Error: \(err.localizedDescription)")
                 return
             }
             self.videos = videos

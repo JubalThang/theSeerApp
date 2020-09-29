@@ -58,3 +58,9 @@ extension View {
         ModifiedContent(content: self, modifier: CornerRadiusModifier(radius: radius, corners: corners))
     }
 }
+
+extension Array {
+    func chunked(int size : Int) -> [Element] {
+        return Array(self[0 ..< size])
+    }
+}

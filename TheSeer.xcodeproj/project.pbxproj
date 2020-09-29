@@ -13,6 +13,8 @@
 		AC2F0DF0251EE07B00DA0C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2F0DEF251EE07B00DA0C97 /* Assets.xcassets */; };
 		AC2F0DF3251EE07B00DA0C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2F0DF2251EE07B00DA0C97 /* Preview Assets.xcassets */; };
 		AC2F0E00251EE10900DA0C97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC2F0DFF251EE10900DA0C97 /* GoogleService-Info.plist */; };
+		AC5971812522922D009CFD3A /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5971802522922D009CFD3A /* NetworkSession.swift */; };
+		AC59718425229703009CFD3A /* CustomURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59718325229703009CFD3A /* CustomURLCache.swift */; };
 		ACA1B461251FC08C00D89987 /* Pastor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B460251FC08C00D89987 /* Pastor.swift */; };
 		ACA1B465251FC0E100D89987 /* FirebaseRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B464251FC0E100D89987 /* FirebaseRespository.swift */; };
 		ACA1B493251FD06900D89987 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B492251FD06900D89987 /* HomeView.swift */; };
@@ -52,6 +54,8 @@
 		AC2F0DF2251EE07B00DA0C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC2F0DF4251EE07B00DA0C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC2F0DFF251EE10900DA0C97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC5971802522922D009CFD3A /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		AC59718325229703009CFD3A /* CustomURLCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomURLCache.swift; sourceTree = "<group>"; };
 		ACA1B460251FC08C00D89987 /* Pastor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastor.swift; sourceTree = "<group>"; };
 		ACA1B464251FC0E100D89987 /* FirebaseRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRespository.swift; sourceTree = "<group>"; };
 		ACA1B492251FD06900D89987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				ACA1B4DE252006B500D89987 /* YouTubeAPIService.swift */,
+				AC5971802522922D009CFD3A /* NetworkSession.swift */,
+				AC59718325229703009CFD3A /* CustomURLCache.swift */,
 			);
 			path = YouTubeAPIService;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				AC2F0DEE251EE07900DA0C97 /* AppView.swift in Sources */,
 				ACA1B4F62520302D00D89987 /* PlayPauseViewBuilder.swift in Sources */,
 				ACA1B4DB2520067E00D89987 /* VideoResponse.swift in Sources */,
+				AC5971812522922D009CFD3A /* NetworkSession.swift in Sources */,
 				ACA1B4DF252006B500D89987 /* YouTubeAPIService.swift in Sources */,
 				ACA1B4D72520061A00D89987 /* Video.swift in Sources */,
 				ACA1B493251FD06900D89987 /* HomeView.swift in Sources */,
@@ -380,6 +387,7 @@
 				ACA1B4A6251FD12900D89987 /* Extensions.swift in Sources */,
 				ACA1B465251FC0E100D89987 /* FirebaseRespository.swift in Sources */,
 				ACA1B4F025202EAE00D89987 /* SermonVieoPlayerView.swift in Sources */,
+				AC59718425229703009CFD3A /* CustomURLCache.swift in Sources */,
 				ACA1B497251FD08F00D89987 /* HomeViewController.swift in Sources */,
 				ACA1B4A2251FD11E00D89987 /* Anchor.swift in Sources */,
 				ACA1B4D4252001AA00D89987 /* FrameModifier.swift in Sources */,
