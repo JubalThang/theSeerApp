@@ -10,10 +10,10 @@ import SwiftUI
 struct SermonRowView: View {
   let videos : [Video]
     var body: some View {
-        Group {
+        ScrollView {
                 ForEach(videos) { video in
                      NavigationLink(destination: CurrentPlayingView(video: video)) {
-                    SermonItemView(video: video)
+                        SermonItemView(video: video)
                     }
             }
         }
