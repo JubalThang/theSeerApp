@@ -10,7 +10,7 @@ import SDWebImageSwiftUI
 
 struct FrameModifier : ViewModifier {
     var imgeUrl : String
-    let pictureSize : CGFloat = 2.1
+    let pictureSize : CGFloat = 2.4
     func body(content: Content) -> some View {
         ZStack {
             content

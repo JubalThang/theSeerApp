@@ -13,6 +13,8 @@ struct PastorProfileView: View {
     var body: some View {
         ScrollView {
             Image("profile_frame")
+                .resizable()
+                .frame(width: UIScreen.main.bounds.width / 1.9 , height: UIScreen.main.bounds.width / 1.9)
                 .modifier(FrameModifier(imgeUrl: selectedPastor.img_url))
                 .padding(.top, 10)
             Text(selectedPastor.name)

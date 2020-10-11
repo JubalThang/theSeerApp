@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1CD5EE23FEBB17719E54E644 /* Pods_TheSeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D362406DC2B2A6827B9C0B /* Pods_TheSeer.framework */; };
+		AC049E0A25328EFD009214E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC049E0925328EFD009214E5 /* GoogleService-Info.plist */; };
 		AC2F0DEC251EE07900DA0C97 /* TheSeerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F0DEB251EE07900DA0C97 /* TheSeerApp.swift */; };
 		AC2F0DEE251EE07900DA0C97 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2F0DED251EE07900DA0C97 /* AppView.swift */; };
 		AC2F0DF0251EE07B00DA0C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2F0DEF251EE07B00DA0C97 /* Assets.xcassets */; };
 		AC2F0DF3251EE07B00DA0C97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2F0DF2251EE07B00DA0C97 /* Preview Assets.xcassets */; };
-		AC2F0E00251EE10900DA0C97 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC2F0DFF251EE10900DA0C97 /* GoogleService-Info.plist */; };
 		AC5971812522922D009CFD3A /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5971802522922D009CFD3A /* NetworkSession.swift */; };
 		AC59718425229703009CFD3A /* CustomURLCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59718325229703009CFD3A /* CustomURLCache.swift */; };
 		ACA1B461251FC08C00D89987 /* Pastor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA1B460251FC08C00D89987 /* Pastor.swift */; };
@@ -47,15 +47,16 @@
 		18D362406DC2B2A6827B9C0B /* Pods_TheSeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheSeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4189D5908BFBDFED0D5F1944 /* Pods-TheSeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeer.release.xcconfig"; path = "Target Support Files/Pods-TheSeer/Pods-TheSeer.release.xcconfig"; sourceTree = "<group>"; };
 		A42E1D760EACFA8B85FE2D41 /* Pods-TheSeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheSeer.debug.xcconfig"; path = "Target Support Files/Pods-TheSeer/Pods-TheSeer.debug.xcconfig"; sourceTree = "<group>"; };
+		AC049E0925328EFD009214E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC2F0DE8251EE07900DA0C97 /* TheSeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheSeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2F0DEB251EE07900DA0C97 /* TheSeerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSeerApp.swift; sourceTree = "<group>"; };
 		AC2F0DED251EE07900DA0C97 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		AC2F0DEF251EE07B00DA0C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2F0DF2251EE07B00DA0C97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC2F0DF4251EE07B00DA0C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC2F0DFF251EE10900DA0C97 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC5971802522922D009CFD3A /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		AC59718325229703009CFD3A /* CustomURLCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomURLCache.swift; sourceTree = "<group>"; };
+		AC5F452025328349004F74F4 /* TheSeer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheSeer.entitlements; sourceTree = "<group>"; };
 		ACA1B460251FC08C00D89987 /* Pastor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pastor.swift; sourceTree = "<group>"; };
 		ACA1B464251FC0E100D89987 /* FirebaseRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRespository.swift; sourceTree = "<group>"; };
 		ACA1B492251FD06900D89987 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		AC2F0DEA251EE07900DA0C97 /* TheSeer */ = {
 			isa = PBXGroup;
 			children = (
+				AC5F452025328349004F74F4 /* TheSeer.entitlements */,
 				ACA1B4E12520071500D89987 /* Utilities */,
 				ACA1B4DD2520069A00D89987 /* YouTubeAPIService */,
 				ACA1B45A251FBD3600D89987 /* FirebaseRespository  */,
@@ -137,7 +139,7 @@
 				AC2F0DED251EE07900DA0C97 /* AppView.swift */,
 				AC2F0DEF251EE07B00DA0C97 /* Assets.xcassets */,
 				AC2F0DF4251EE07B00DA0C97 /* Info.plist */,
-				AC2F0DFF251EE10900DA0C97 /* GoogleService-Info.plist */,
+				AC049E0925328EFD009214E5 /* GoogleService-Info.plist */,
 				AC2F0DF1251EE07B00DA0C97 /* Preview Content */,
 			);
 			path = TheSeer;
@@ -313,7 +315,7 @@
 			files = (
 				AC2F0DF3251EE07B00DA0C97 /* Preview Assets.xcassets in Resources */,
 				AC2F0DF0251EE07B00DA0C97 /* Assets.xcassets in Resources */,
-				AC2F0E00251EE10900DA0C97 /* GoogleService-Info.plist in Resources */,
+				AC049E0A25328EFD009214E5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,10 +526,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheSeer/TheSeer.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TheSeer/Preview Content\"";
-				DEVELOPMENT_TEAM = R2L6YCMQK7;
+				DEVELOPMENT_TEAM = L5HN736S53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TheSeer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -535,7 +538,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jubalthang.TheSeer;
+				PRODUCT_BUNDLE_IDENTIFIER = jubalthang.TheSeerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -549,10 +552,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheSeer/TheSeer.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TheSeer/Preview Content\"";
-				DEVELOPMENT_TEAM = R2L6YCMQK7;
+				DEVELOPMENT_TEAM = L5HN736S53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TheSeer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -560,7 +564,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jubalthang.TheSeer;
+				PRODUCT_BUNDLE_IDENTIFIER = jubalthang.TheSeerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

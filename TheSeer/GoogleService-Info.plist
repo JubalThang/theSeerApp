@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>6457681093-2d0pc9qk763ehr3cq3gmqsp4u6qgku1h.apps.googleusercontent.com</string>
+	<string>6457681093-4ktfk6kn7nehh3dqc2jgv76ffdpfao29.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.6457681093-2d0pc9qk763ehr3cq3gmqsp4u6qgku1h</string>
+	<string>com.googleusercontent.apps.6457681093-4ktfk6kn7nehh3dqc2jgv76ffdpfao29</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAaaN3hBIrAcWUzQ5IQXaYN9iEEWkpBxW0</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>jubalthang.TheSeer</string>
+	<string>jubalthang.TheSeerApp</string>
 	<key>PROJECT_ID</key>
 	<string>the-seer-2f8f5</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:6457681093:ios:a0735079d78a034a2e7cac</string>
+	<string>1:6457681093:ios:9ec47014199829ac2e7cac</string>
 	<key>DATABASE_URL</key>
 	<string>https://the-seer-2f8f5.firebaseio.com</string>
 </dict>

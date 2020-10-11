@@ -54,7 +54,7 @@ struct HomeViewController : UIViewControllerRepresentable {
         }
         // MARK: Cell Size
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: collectionView.frame.width / 2 - 1, height: collectionView.frame.height / 3.5)
+            return CGSize(width: collectionView.frame.width / 2 - 1, height: collectionView.frame.height / 4)
         }
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             return 2
