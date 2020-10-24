@@ -10,53 +10,74 @@ import SwiftUI
 struct AppView: View {
     var firebaseRepo = FirebaseRespository()
     var body: some View {
-        TabView {
-            NavigationView {
-                if #available(iOS 14.0, *){
-                HomeView()
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            Image("navlogo")
+        if #available(iOS 14.0, *) {
+            TabView {
+                NavigationView {
+                    HomeView()
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                Image("navlogo")
+                            }
                         }
+                    
+                }
+                .environmentObject(firebaseRepo)
+                .tabItem {
+                    VStack {
+                        Image("home").renderingMode(.template)
+                        Text("HOME")
                     }
-                } else {
+                }
+                NavigationView {
+                    SermonsView()
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                Image("navlogo")
+                            }
+                        }
+                    
+                }
+                .tabItem {
+                    VStack{
+                        Image("sermons").renderingMode(.template)
+                        Text("SERMONS")
+                    }
+                }
+            }
+            .ignoresSafeArea()
+        } else {
+            TabView {
+                NavigationView {
+                    
                     HomeView()
                         .navigationBarTitle("", displayMode: .inline)
                         .navigationBarItems(trailing: Image("navlogo"))
+                    
                 }
-                
-            }
-            .environmentObject(firebaseRepo)
-            .tabItem {
-                VStack {
-                    Image("home").renderingMode(.template)
-                    Text("HOME")
-                }
-            }
-            NavigationView {
-                if #available(iOS 14.0, *) {
-                SermonsView()
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .principal) {
-                            Image("navlogo")
-                        }
+                .environmentObject(firebaseRepo)
+                .tabItem {
+                    VStack {
+                        Image("home").renderingMode(.template)
+                        Text("HOME")
                     }
-                } else {
+                }
+                NavigationView {
+                    
                     SermonsView()
                         .navigationBarTitle("", displayMode: .inline)
-                        .navigationBarItems(trailing: Image("navlogo"))
+                    
+                }
+                .tabItem {
+                    VStack{
+                        Image("sermons").renderingMode(.template)
+                        Text("SERMONS")
+                    }
                 }
             }
-            .tabItem {
-                VStack{
-                    Image("sermons").renderingMode(.template)
-                    Text("SERMONS")
-                }
-            }
+            .edgesIgnoringSafeArea(.all)
         }
-        .ignoresSafeArea()
     }
 }
 

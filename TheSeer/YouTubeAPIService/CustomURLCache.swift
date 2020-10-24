@@ -22,7 +22,7 @@ final class CustomURLCache : URLCache {
         // try to get cache response
         if let cachedResponse = super.cachedResponse(for: request) {
 
-            print("User Info : \(cachedResponse.userInfo)")
+            //print("User Info : \(cachedResponse.userInfo )")
             // try to get userInfo
             if let userInfo = cachedResponse.userInfo {
 
